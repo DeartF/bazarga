@@ -1,0 +1,99 @@
+.wrapper__reg {
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+  height: 90vh;
+  justify-content: center;
+  -ms-align-items: center;
+  align-items: center;
+  padding-top: 50px;
+}
+
+  .form__reg {
+    border-radius: 3px;
+    padding: 10px;
+    width: 25%;
+    border: 10px solid #3ad613;
+  }
+
+    .form__reg a {
+      text-decoration: none;
+    }
+
+    .form__title {
+      font-size: 16px;
+      color: #3ad613;
+      margin-bottom: 10px;
+      text-align: center;
+      font-weight: 600;
+    }
+
+      .form__title i {
+        padding-right: 15px;
+      }
+
+    .input__reg {
+      font-size: 16px;
+      border: 2px solid #e9eaea;
+      padding: 12px 14px;
+      box-sizing: border-box;
+      margin-bottom: 22px;
+      color: #1e8da6;
+      outline: none;
+      width: 100%;
+    }
+
+    .first {
+      margin-top: 22px;
+    }
+
+    .btn__reg {
+      position: relative;
+      left: 30%;
+      padding: 8px 12px;
+      color: #000;
+      border-radius: 3px;
+      border: 2px solid #2CC218;
+      background-color: #fff;
+      cursor: pointer;
+      transition: .3s;
+    }
+
+      .btn__reg:hover {
+        background-color: #2CC218;
+        color: #fff;
+      }
+
+      .btn__log {
+        padding: 8px 20px;
+        color: #000;
+        border-radius: 3px;
+        border: 2px solid #2CC218;
+        background-color: #fff;
+        cursor: pointer;
+        transition: .3s;
+        font-size: 16px;
+      }
+
+        .btn__log:hover {
+          background-color: #2CC218;
+          color: #fff;
+        }
+      
+      .hide__password {
+        position: absolute;
+        right: 40%;
+        top: 57%;
+        transition: .15s;
+      }
+
+     .show__password {
+        position: absolute;
+        right: 40%;
+        top: 57%;
+        transition: .15s;
+      }
+
+      .fa-eye-slash:before {
+        display: block;
+      }

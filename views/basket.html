@@ -1,0 +1,22 @@
+<div class="table">
+	<div class="table__inner">
+		<div class="thead">
+			<div class="thead__tr">
+				<div class="thead__td">Название</div>
+				<div class="thead__td">Павильон</div>
+				<div class="thead__td">Стоимость</div>
+				<div class="thead__td">Килограммы</div>
+				<div class="thead__td">Удалить</div>
+			</div>
+		</div>
+		<div class="tbody">
+			<div class="tbody__tr" ng-repeat = " product in vm.basket ">
+				<div class="tbody__td" ng-bind = " product.model "></div>
+				<div class="tbody__td" ng-bind = " product.gender "></div>
+				<div class="tbody__td" ng-bind = " product.price "></div>
+				<div class="tbody__td" ng-bind = " product.count "></div>
+				<div class="tbody__td btn__basket" ng-click = " vm.removeFromCart(product)"> Удалить </div>
+			</div>
+		</div>
+	</div>
+</div>

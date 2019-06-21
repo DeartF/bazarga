@@ -1,0 +1,721 @@
+<!-- 
+<section class="banner animated flash">
+  <div class="banner__photo">
+    <div alt="" class="banner__img"></div>
+    <div class="banner__background"></div>
+  </div>
+  <div class="ghost__txt">
+    <ul>
+      <span class="li__white">Л</span>
+      <span class="li__white">У</span>
+      <span class="li__white">Ч</span>
+      <span class="li__white">Ш</span>
+      <span class="li__white">И</span>
+      <span class="li__white">Й</span>
+      <span class="li__red">Б</span>
+      <span class="li__red">А</span>
+      <span class="li__red">З</span>
+      <span class="li__red">А</span>
+      <span class="li__red">Р</span>
+      <span class="li__white">А</span>
+      <span class="li__white">Л</span>
+      <span class="li__white">М</span>
+      <span class="li__white">А</span>
+      <span class="li__white">Т</span>
+      <span class="li__white">Ы</span>
+      
+    </ul>
+  </div>
+    <div class="banner__txt" id="dynamic">
+
+    </div>
+    <p class="banner__title">Пока вы заняты делами, наш онлайн базар позаботится о вашем холодильнике, мы наполним его свежайшими продуктами уже сегодня</p>
+    <i class="fas fa-angle-double-down banner__arrow"></i>
+   <div class="banner__btn">
+    <button class="banner__button" ng-click = "vm.logout()"><a href="#" class="banner__consultation">Более подробно о нас<i class="fas fa-angle-down angle"></i></a></button>
+  </div> -->
+  <section class="banner">
+  <div class="banner__background"></div>
+    
+    <div class="banner__info">
+      <p class="banner__info-title">Пока вы заняты делами, наш онлайн базар позаботится о вашем холодильнике, мы наполним его свежайшими продуктами уже сегодня</p>
+    <button class="button__banner" ui-sref = "pavilion">заказать</button>
+    <div class="arrow__flex">
+      <div class="arrow-7">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </div>
+    </div>
+  </section>
+</section> 
+<p class="slider__title">
+  Наш онлайн базар это
+</p>
+<div class="slider" id="slider"> 
+  <div class="slider__content" id="slider-content">
+    <div class="slider__images">
+      <div class="slider__images-item slider__images-item--active" data-id="1"><img src="../images/medium/trust.jpg" alt="Доверие" /></div>
+      <div class="slider__images-item" data-id="2"><img src="../images/big/secondBanner.jpg" alt="Фрукты алматы" /></div>
+      <div class="slider__images-item" data-id="3"><img src="../images/medium/market.jpg"  alt="Базар алматы"/></div>
+      <div class="slider__images-item" data-id="4"><img src="../images/medium/expirience.jpg"  alt="Опыт"/></div>
+      <div class="slider__images-item" data-id="5"><img src="../images/medium/deliveryjpg.jpg"  alt="Доставка алматы"/></div>
+    </div>
+    <div class="slider__text">
+      <div class="slider__text-item slider__text-item--active" data-id="1">
+        <div class="slider__text-item-head">
+          <h3>Доверие</h3>
+        </div>
+        <div class="slider__text-item-info">
+          <p>“Нам доверяют десятки тысяч клиентов, которые при помощи нас стали счастливами и здоровыми, а всё благодаря нашему онлайн базару”</p>
+        </div>
+      </div>
+      <div class="slider__text-item" data-id="2">
+        <div class="slider__text-item-head">
+          <h3>Качевство </h3>
+        </div>
+        <div class="slider__text-item-info">
+          <p>“Наш онлайн базар предоставляет продукты высшего сорта, которые способны улучшить качевство вашей жизни”</p>
+        </div>
+      </div>
+      <div class="slider__text-item" data-id="3">
+        <div class="slider__text-item-head">
+          <h3>Атмосфера</h3>
+        </div>
+        <div class="slider__text-item-info">
+          <p>“МЫ даём вам возможность ощутить себя в этой прекрасной атмосфере, атмосфере базара. МЫ прелагаем вам посетить наш базар, не выходя из дома!”</p>
+        </div>
+      </div>
+      <div class="slider__text-item" data-id="4">
+        <div class="slider__text-item-head">
+          <h3>Опыт</h3>
+        </div>
+        <div class="slider__text-item-info">
+          <p>“За своими плечами мы имеем 20 лет успешной работы на базаре, так что мы знаем толк как сделать вас максимально здоровыми и сильными духом”</p>
+        </div>
+      </div>
+      <div class="slider__text-item" data-id="5">
+        <div class="slider__text-item-head">
+          <h3>Доставка</h3>
+        </div>
+        <div class="slider__text-item-info">
+          <p>“За 2018 год, наша компания смогла масштабироваться и побить рекорды, одним из которых является то, что наша компания выполнила свыше 7869 доставок за 2018 год”</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="slider__nav">
+    <div class="slider__nav-arrows">
+      <div class="slider__nav-arrow slider__nav-arrow--left" id="left">to left</div>
+      <div class="slider__nav-arrow slider__nav-arrow--right" id="right">to right</div>
+    </div>
+    <div class="slider__nav-dots" id="slider-dots">
+      <div class="slider__nav-dot slider__nav-dot--active" data-id="1"></div>
+      <div class="slider__nav-dot" data-id="2"></div>
+      <div class="slider__nav-dot" data-id="3"></div>
+      <div class="slider__nav-dot" data-id="4"></div>
+      <div class="slider__nav-dot" data-id="5"></div>
+    </div>
+  </div>
+</div>
+  
+  <!-- <p class="bid__inner-title"> <a href="/request">Оставьте заявку</a>, узнайте цену заказа и получите свежайшие продукты на руки уже через час</p>  -->
+<p class="title__text-2">Интересные факты</p>
+<div class='container' style="margin-top: 80px">
+  <ul class="container__ul">
+    <ol class="container__ul-ol">
+      <a class='normal' href='#'>
+        <svg viewBox='0 0 80 76' x='0px' y='0px' style = " width: 60px; height: 60px;">
+          <g>
+            <path d='M 68.9708 24.8623 L 60.4554 2.3018 C 59.9641 0.7017 58.1628 -0.2583 56.5252 0.3817 L 1.9822 20.2222 C 0.3822 20.7022 -0.4179 22.6222 0.2222 24.2223 L 8.8624 47.7797 L 8.8624 35.1484 C 8.8624 29.5024 13.3425 24.8623 18.8857 24.8623 L 32.9442 24.8623 L 50.63 12.862 L 60.7829 24.8623 L 68.9708 24.8623 L 68.9708 24.8623 ZM 77.098 32.0625 L 18.8857 32.0625 C 17.2512 32.0625 16.0625 33.4511 16.0625 35.1484 L 16.0625 72.8491 C 16.0625 74.5477 17.2512 75.9375 18.8857 75.9375 L 77.098 75.9375 C 78.742 75.9375 79.9376 74.5477 79.9376 72.8491 L 79.9376 35.1484 C 79.9376 33.4511 78.742 32.0625 77.098 32.0625 L 77.098 32.0625 ZM 73.0626 68.0625 L 23.9375 68.0625 L 23.9375 61.0852 L 31.4704 43.7232 L 42.7696 57.6777 L 53.4138 46.8062 L 67.1695 41.9375 L 73.0626 55.0815 L 73.0626 68.0625 L 73.0626 68.0625 Z'></path>
+          </g>
+        </svg>
+      </a>
+      <div class='info'>
+        <h3>Зналете ли вы, что Казастан - родина свежих овощей и фруктов?</h3>
+        <p>Производство овощей выросло на 25% за последние пять лет, а производство яблок увеличилось на треть за тот же период.</p>
+      </div>
+    </ol>
+    <ol class="container__ul-ol">
+      <a class='normal' href='#'>
+        <svg viewBox='0 0 80 76' x='0px' y='0px'>
+          <g>
+            <path d='M 68.9708 24.8623 L 60.4554 2.3018 C 59.9641 0.7017 58.1628 -0.2583 56.5252 0.3817 L 1.9822 20.2222 C 0.3822 20.7022 -0.4179 22.6222 0.2222 24.2223 L 8.8624 47.7797 L 8.8624 35.1484 C 8.8624 29.5024 13.3425 24.8623 18.8857 24.8623 L 32.9442 24.8623 L 50.63 12.862 L 60.7829 24.8623 L 68.9708 24.8623 L 68.9708 24.8623 ZM 77.098 32.0625 L 18.8857 32.0625 C 17.2512 32.0625 16.0625 33.4511 16.0625 35.1484 L 16.0625 72.8491 C 16.0625 74.5477 17.2512 75.9375 18.8857 75.9375 L 77.098 75.9375 C 78.742 75.9375 79.9376 74.5477 79.9376 72.8491 L 79.9376 35.1484 C 79.9376 33.4511 78.742 32.0625 77.098 32.0625 L 77.098 32.0625 ZM 73.0626 68.0625 L 23.9375 68.0625 L 23.9375 61.0852 L 31.4704 43.7232 L 42.7696 57.6777 L 53.4138 46.8062 L 67.1695 41.9375 L 73.0626 55.0815 L 73.0626 68.0625 L 73.0626 68.0625 Z'></path>
+          </g>
+        </svg>
+      </a>
+      <div class='info'>
+        <h3>Знаете ли вы сколько времени вы теряете?</h3>
+        <p>По статистеке человек тратит 220 часов в год по походам в магазины. Предлагаем вам использовать это время более рационально </p>
+      </div>
+    </ol>
+    <ol class="container__ul-ol">
+      <a class='normal' href='#'>
+        <svg viewBox='0 0 80 76' x='0px' y='0px'>
+          <g>
+            <path d='M 68.9708 24.8623 L 60.4554 2.3018 C 59.9641 0.7017 58.1628 -0.2583 56.5252 0.3817 L 1.9822 20.2222 C 0.3822 20.7022 -0.4179 22.6222 0.2222 24.2223 L 8.8624 47.7797 L 8.8624 35.1484 C 8.8624 29.5024 13.3425 24.8623 18.8857 24.8623 L 32.9442 24.8623 L 50.63 12.862 L 60.7829 24.8623 L 68.9708 24.8623 L 68.9708 24.8623 ZM 77.098 32.0625 L 18.8857 32.0625 C 17.2512 32.0625 16.0625 33.4511 16.0625 35.1484 L 16.0625 72.8491 C 16.0625 74.5477 17.2512 75.9375 18.8857 75.9375 L 77.098 75.9375 C 78.742 75.9375 79.9376 74.5477 79.9376 72.8491 L 79.9376 35.1484 C 79.9376 33.4511 78.742 32.0625 77.098 32.0625 L 77.098 32.0625 ZM 73.0626 68.0625 L 23.9375 68.0625 L 23.9375 61.0852 L 31.4704 43.7232 L 42.7696 57.6777 L 53.4138 46.8062 L 67.1695 41.9375 L 73.0626 55.0815 L 73.0626 68.0625 L 73.0626 68.0625 Z'></path>
+          </g>
+        </svg>
+      </a>
+      <div class='info'>
+        <h3>Как замедлить процесс старения?</h3>
+        <p>Знаете ли вы, eсли ежедневно употреблять капусту брокколи, то можно немного замедлить процесс старения.</p>
+      </div>
+    </ol>
+    <ol class="container__ul-ol">
+      <a class='normal' href='#'>
+        <svg viewBox='0 0 80 76' x='0px' y='0px'>
+          <g>
+            <path d='M 68.9708 24.8623 L 60.4554 2.3018 C 59.9641 0.7017 58.1628 -0.2583 56.5252 0.3817 L 1.9822 20.2222 C 0.3822 20.7022 -0.4179 22.6222 0.2222 24.2223 L 8.8624 47.7797 L 8.8624 35.1484 C 8.8624 29.5024 13.3425 24.8623 18.8857 24.8623 L 32.9442 24.8623 L 50.63 12.862 L 60.7829 24.8623 L 68.9708 24.8623 L 68.9708 24.8623 ZM 77.098 32.0625 L 18.8857 32.0625 C 17.2512 32.0625 16.0625 33.4511 16.0625 35.1484 L 16.0625 72.8491 C 16.0625 74.5477 17.2512 75.9375 18.8857 75.9375 L 77.098 75.9375 C 78.742 75.9375 79.9376 74.5477 79.9376 72.8491 L 79.9376 35.1484 C 79.9376 33.4511 78.742 32.0625 77.098 32.0625 L 77.098 32.0625 ZM 73.0626 68.0625 L 23.9375 68.0625 L 23.9375 61.0852 L 31.4704 43.7232 L 42.7696 57.6777 L 53.4138 46.8062 L 67.1695 41.9375 L 73.0626 55.0815 L 73.0626 68.0625 L 73.0626 68.0625 Z'></path>
+          </g>
+        </svg>
+      </a>
+      <div class='info'>
+        <h3>Как легко похудеть?</h3>
+        <p>Грейпфрут - источник антиоксидантов, снижающих уровень холестерина в крови. Содержит нарингин, который стимулирует обмен веществ, что приводит к похудению </p>
+      </div>
+    </ol>
+  </ul>
+</div>
+<section class="choose__me">
+  <div class="choose__me-title">
+    <p class="title__text">Почему мы?</p>
+  </div>
+  <div class="choose__me-container">
+
+  <div class="choose__me-inner animated">
+    <div class="inner__block">
+      <p class="inner__block-img">
+        <i class="fas fa-hands-helping inner__block-i"></i>
+      </p>
+      <div class="choose__info">
+        <p class="inner__block-title">Работаем без посредников!</p>
+        <p class="inner__block-subtitle">Покупая у нас вы все получаете с первых рук!</p>
+      </div>
+    </div>
+    <div class="inner__block">
+        <p class="inner__block-img">
+          <i class="fas fa-shipping-fast inner__block-i"></i>
+        </p>
+        <div class="choose__info">
+        <p class="inner__block-title">Быстрая скорость доставки!</p>
+        <p class="inner__block-subtitle">Наши клиенты никогда не ждут! Оформил, через час мы у вас!</p>
+      </div>
+      </div>
+      <div class="inner__block">
+        <p class="inner__block-img">
+          <i class="fas fa-carrot inner__block-i"></i>
+        </p>
+        <div class="choose__info">
+        <p class="inner__block-title">Качевство продуктов!</p>
+        <p class="inner__block-subtitle">Благодаря нам вы получаете продукты высшего качевства!</p>
+       </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- <section class="more__information animated mov3" id = "more__information">
+  <div class="more__information-inner">
+    <div class="information__info">
+      <span class="information__title">
+        20 лет
+      </span>
+      <span class="information__subtitle">
+        Успешной работы на рынке
+      </span>
+    </div>
+    <div class="information__info">
+      <span class="information__title">
+        10000
+      </span>
+      <span class="information__subtitle">
+        Больше 10.000 довольных клиентов
+      </span>
+    </div>
+    <div class="information__info">
+      <span class="information__title">
+        95%
+      </span>
+      <span class="information__subtitle">
+        Людей посоветовали бы нас своим знакомым
+      </span>
+    </div>
+    <div class="information__info">
+      <span class="information__title">
+        5000 
+      </span>
+      <span class="information__subtitle">
+        Более 5.000 доставок за 2018г
+      </span>
+    </div>
+    <div class="information__info">
+      <span class="information__title">
+        50 партнеров
+      </span>
+      <span class="information__subtitle">
+        больше 50 партнеров и поствщиков
+      </span>
+    </div> 
+  </div>
+</section> -->
+<!-- <section class="choose__pavilion">
+  <ul class="choose__pavilion-list animated">
+    <li class="choose__pavilion-item " ui-sref = "fruit">
+      <div class="content">
+        <p class="content__title">Фруктовый павильон</p>
+         <p class="content__subtitle">Высоко квалифицированные казахстанские фрукты! Только что привезенные!</p>
+      </div>
+    </li>
+    <li class="choose__pavilion-item animated">
+      <div class="content">
+        <p class="content__title">Овощной павильон</p>
+       <p class="content__subtitle">Свежевыращенные овощи с лучших полей Китая!</p> 
+      </div>
+    </li>
+    <li class="choose__pavilion-item animated">
+      <div class="content">
+        <p class="content__title">Зеленый павильон</p>
+        <p class="content__subtitle"></p>
+      </div>
+    </li>
+    <li class="choose__pavilion-item animated">
+      <div class="content">
+        <p class="content__title">Мясной павильон</p>
+       <p class="content__subtitle">Свежевыращенные овощи с лучших полей Китая!</p> 
+      </div>
+    </li>
+    <li class="choose__pavilion-item animated">
+      <div class="content">
+        <p class="content__title">Рыбный павильон</p>
+       <p class="content__subtitle">Свежевыращенные овощи с лучших полей Китая!</p> 
+      </div>
+    </li>
+  </ul>
+</section> -->
+<!-- <div class="card">
+    <div class="imgBx">
+        <img src="">
+    </div>
+    <div class="main-carousel">
+      <div class="carousel-cell carousel-cell-2">
+        <div class="details">
+          <h2>Здесь могла быть ваша реклама</h2>
+          <p>Сделайте свою жену счастливой при помощи нашего подарка, корзина с экзотическими фруктами. Наши фрукты это фантастические вкусы которые вы вряд ли прежде испытывали в своей жизни. Вы ощутите чувство легкости и необычного вкуса. Все фруты привезены с разных стран , благодаря чему наша корзина полна неожиданности вкусовых рецепторов. Каждая жена будет рада получить такой подарок себе в руки.</p>
+      </div>
+      <div class="carousel-cell caroucel-cell-2">
+        <h2> Здесь могла быть ваша реклама</h2>
+      </div>
+      </div>
+    </div>
+</div> -->
+    <div class=" ads-carousel mobile">
+      <div class="carousel-cell salad__cell carousel-cell-2 ">
+        <div class=" curry slider__about fade">
+          <img src="../images/medium/exotic.jpg" alt="Экзотические фрукты в корзине">
+          <div class="salad__info salad__info-6 salad__info-ads">
+            <div class="salad__info--text">
+              <p class="salad__name">Корзина с экзотическими фруктами</p>
+              <p class="ads__text">Сделайте свою жену счастливой при помощи нашего подарка, корзина с экзотическими фруктами. Наши фрукты это фантастические вкусы которые вы вряд ли прежде испытывали в своей жизни. Вы ощутите чувство легкости и необычного вкуса. Все фруты привезены с разных стран , благодаря чему наша корзина полна неожиданности вкусовых рецепторов. Каждая жена будет рада получить такой подарок себе в руки.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="carousel-cell salad__cell carousel-cell-2">
+        <div class=" curry slider__about fade">
+          <img src="../images/products/nophoto.jpg" alt="Реклама">
+          <div class="salad__info salad__info-ads">
+            <div class="salad__info--text">
+              <p class="salad__name">Здесь могла быть ваша реклама</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="carousel-cell salad__cell carousel-cell-2">
+        <div class=" curry slider__about fade">
+          <img src="../images/products/nophoto.jpg" alt="Реклама">
+          <div class="salad__info salad__info-ads">
+            <div class="salad__info--text">
+              <p class="salad__name">Здесь могла быть ваша реклама</p>
+            </div>
+          </div>
+        </div>
+      </div>
+  </div>
+
+    
+</div>
+<p class="main__carousel-title">Наши павильоны</p>
+<div class="main-carousel">
+  <div class="carousel-cell pavilion__cell">
+    <div class="carousel__cell-block">
+      <p class="carousel__cell-title">Овощной павильон</p>
+      <button class="carousel__cell-btn" ui-sref = "vegetable">Перейти на павильон</button>      
+    </div>
+  </div>
+  <div class="carousel-cell pavilion__cell">
+    <div class="carousel__cell-block">
+      <p class="carousel__cell-title">Фруктовый павильон</p>
+      <button class="carousel__cell-btn" ui-sref='fruit'>Перейти на павильон</button>      
+    </div>
+  </div>
+  <div class="carousel-cell pavilion__cell">
+    <div class="carousel__cell-block">
+      <p class="carousel__cell-title">Мясной павильон</p>
+      <button class="carousel__cell-btn" ui-sref="meat">Перейти на павильон</button>      
+    </div>
+  </div>
+  <div class="carousel-cell pavilion__cell">
+    <div class="carousel__cell-block">
+      <p class="carousel__cell-title">Зелёный павильон</p>
+      <button class="carousel__cell-btn" ui-sref = "green">Перейти на павильон</button>      
+    </div>
+  </div>
+  <div class="carousel-cell pavilion__cell">
+    <div class="carousel__cell-block">
+      <p class="carousel__cell-title">Ягодный павильон</p>
+      <button class="carousel__cell-btn" ui-sref = "berry">Перейти на павильон</button>    
+    </div>
+  </div>
+  <div class="carousel-cell pavilion__cell">
+    <div class="carousel__cell-block">
+      <p class="carousel__cell-title">Рыбный павильон</p>
+      <button class="carousel__cell-btn" style="font-size: 18px;">Разрабатывается</button>    
+    </div>
+  </div>
+  <div class="carousel-cell pavilion__cell">
+    <div class="carousel__cell-block">
+      <p class="carousel__cell-title">Молочный павильон</p>
+      <button class="carousel__cell-btn" ui-sref = "milk">Перейти на павильон</button>
+    </div>
+  </div>
+  <div class="carousel-cell pavilion__cell">
+    <div class="carousel__cell-block">
+      <p class="carousel__cell-title">Сухофруктовый павильон</p>
+      <button class="carousel__cell-btn" ui-sref = "dried">Перейти на павильон</button>
+    </div>
+  </div>
+</div>
+<!-- <section class="pavilion">
+    <div class="pavilion__inner-item animated" >
+      <div class="item__img">
+      </div>
+      <div class="item__info">
+        <p><strong>Павильон :</strong> Мясной</p>
+        <p><strong>Время открытия :</strong> 8:00</p>
+        <p><strong>Время закрытия :</strong> 22:00</p>
+        <p><strong>Особенности :</strong> На павильоне присутствует мясо всех видов</p>
+        <button class="item__info-btn">Перейти на павильон</button>
+      </div>
+    </div>
+    <div class="pavilion__inner-item animated">
+      <div class="item__img">
+
+      </div>
+      <div class="item__info">
+        <p><strong>Павильон :</strong> Рыбный</p>
+        <p><strong>Время открытия :</strong> 9:00</p>
+        <p><strong>Время закрытия :</strong> 20:00</p>
+        <p><strong>Особенности :</strong> Только что привезенная рыба с 8 озёр</p>
+        <button class="item__info-btn">Перейти на павильон</button>
+      </div>
+    </div>
+    <div class="pavilion__inner-item animated">
+      <div class="item__img">
+
+      </div>
+      <div class="item__info">
+        <p><strong>Павильон :</strong> Овощной</p>
+        <p><strong>Время открытия :</strong> 9:00</p>
+        <p><strong>Время закрытия :</strong> 22:00</p>
+        <p><strong>Особенности :</strong> Свежайшие овощи с лучших грядок Казахстана</p>
+        <button class="item__info-btn">Перейти на павильон</button>
+      </div>
+    </div>
+    <div class="pavilion__inner-item animated">
+      <div class="item__img">
+
+      </div>
+      <div class="item__info">
+        <p><strong>Павильон :</strong> Фруктовый</p>
+        <p><strong>Время открытия :</strong> 6:00</p>
+        <p><strong>Время закрытия :</strong> 20:00</p>
+        <p><strong>Особенности :</strong> Вкуснейшие фрукты с лучших садов Казахстана</p>
+        <button class="item__info-btn" ui-sref = "fruit">Перейти на павильон</button>
+      </div>
+    </div>
+</section> -->
+<!-- <div class="pavilions__button">
+  <button class="item__info-pavilion animated"><a href="/pavilions">Просмотреть остальные павильоны</a></button>
+</div>
+ --><!-- <section class="advertising">
+  <div class="advertising__title">
+    Реклама
+  </div>
+</section> -->
+
+
+<!-- MOBILE SALAD VERSION -->
+
+<div class="choose__me-title">
+    <p class="title__text">Рецепты от лучших шеф поваров</p>
+  </div>
+<div class=" salad__carousel mobile" data-salad = "open">
+  <div class="carousel-cell salad__cell">
+    <div class=" curry slider__about fade">
+        <img src="../images/medium/crabsalad.jpg" alt="Крабовый салат рецепт">
+        <div class="salad__info salad__info-1">
+          <div class="salad__info-text">
+            <p class="salad__name">Крабовый салат</p>
+            <p class="salad__title">Ингридиенты</p>
+            <p class="salad__text">Крабовые палочки - 240 г</p>
+            <p class="salad__text">Кукуруза консервированная - 340 г</p>
+            <p class="salad__text">Яйца - 4 шт.</p>
+            <p class="salad__text">Сыр - 200 г</p>
+            <p class="salad__text">Майонез - 150 г (по вкусу)</p>
+            <p class="salad__text">Соль - по вкусу</p>
+            <p class="salad__title">Способ приготовления</p>
+            <p class="salad__text">1)Яйца вымыть, выложить в казанок, залить холодной водой, посолить, довести до
+              кипения. </p>
+            <a href="/recepts/crabsalad" class="recept__all">Просмотреть полный рецепт</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  <div class="carousel-cell salad__cell">
+    <div class="curry slider__about fade">
+      <img src="../images/medium/ragu.jpg" alt="Рагу рецепт">
+      <div class="salad__info salad__info-2">
+        <div class="salad__info-text">
+          <p class="salad__name">Рагу</p>
+          <p class="salad__title">Ингридиенты</p>
+          Свинина - 0,5 кг
+          <br>
+          Картофель - 1 кг
+          <br>
+          Кабачок - 1 шт.
+          <br>
+          Перец болгарский - 3 шт.
+          <br>
+          Перец жгучий - 1 шт.
+          <br>
+          Томаты - 4 шт.
+          <br>
+          Морковь - 2 шт.
+          <br>
+          Лук репчатый - 3 шт.
+          <br>
+          Чеснок - 5 зубков
+          <br>
+          <a href="/recepts/ragu" class="recept__all">Просмотреть полный рецепт</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="carousel-cell salad__cell">
+    <div class="curry slider__about fade">
+      <img src="../images/medium/tcezari.jpg" alt="Салат цезарь рецепт">
+      <div class="salad__info salad__info-3">
+        <div class="salad__info-text">
+          <p class="salad__name">Салат цезарь</p>
+          <p class="salad__title">Ингридиенты</p>
+          Куриная грудка отварная - 300 г
+          <br>
+          Яйца вареные - 4 шт.
+          <br>
+          Сухарики - 1 пачка
+          <br>
+          Сыр твердый - 200 г
+          <br>
+          Помидоры Черри - 200 г
+          <br>
+          Листья салата - 200 г
+          <br>
+          Заправка:
+          <br>
+          Соль - 10 г
+          <br>
+          <a href="#" class="recept__all" ui-sref = "tcezarisalad">Просмотреть полный рецепт</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="carousel-cell salad__cell">
+     <div class="curry slider__about fade">
+      <img src="../images/medium/minute.jpg" alt="Салат минутка рецепт">
+      <div class="salad__info salad__info-4">
+        <div class="salad__info-text">
+          <p class="salad__name">Салат минутка</p>
+          <p class="salad__title">Ингридиенты</p>
+          Помидоры - 2-3 шт.
+          <br>
+          Сырок "Дружба" плавленый - 1 шт.
+          <br>
+          Чеснок - 1 зубок
+          <br>
+          Майонез - 1,5 ст. ложки
+          <br>
+          Соль - 3 щепотки
+          <br>
+          Перец черный молотый - 2 щепотки
+          <br>
+          Сухарики - 50 г
+          <br>
+          Зелень - по вкусу
+          <br>
+          <a href="#" class="recept__all" ui-sref = "minutesalad">Просмотреть полный рецепт</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="carousel-cell salad__cell">
+    <div class="curry slider__about fade">
+      <img src="../images/medium/fish.jpg" alt="Греческая рыба в духовке рецепт">
+      <div class="salad__info salad__info-5">
+        <div class="salad__info-text">
+          <p class="salad__name">Греческая рыба в духовке</p>
+          <p class="salad__title">Ингридиенты</p>
+          Филе любой белой рыбы - 700 г
+          <br>
+          Помидоры - 2 шт.
+          <br>
+          Сыр твердый - 150 г
+          <br>
+          Сметана - 200 г
+          <br>
+          Чеснок - 3 зубчика (по вкусу)
+          <br>
+          <p class="salad__title">Способ приготовления</p>
+          1)Зелень мелко рубим.
+          <br>
+          <a href="#" class="recept__all" ui-sref = "fish">Просмотреть полный рецепт</a>
+        </div> 
+      </div>
+    </div>
+  </div>
+</div>
+<!-- <div class="accordion" data-accordion = "open">
+  <div>
+    <div class="accordion-header">First</div>
+    <div class="accordion-body">Lorem ipsum dolor sit amet.</div>
+  </div>
+  <div>
+    <div class="accordion-header">Second</div>
+    <div class="accordion-body">Lorem ipsum dolor sit amet.</div>
+  </div>
+  <div>
+    <div class="accordion-header">Third</div>
+    <div class="accordion-body">Lorem ipsum dolor sit amet.</div>
+  </div>
+</div> -->
+<div class="recept__text animated">
+    <div class="recept__text-subtitle">
+      Отзывы наших путников!
+    </div>
+  </div>
+<div class="sliderr">
+    <input class="slider__navv" type="radio" name="slider" title="slide1" checked="checked"/>
+    <input class="slider__navv" type="radio" name="slider" title="slide2"/>
+    <input class="slider__navv" type="radio" name="slider" title="slide3"/>
+    <input class="slider__navv" type="radio" name="slider" title="slide4"/>
+    <div class="slider__innerr">
+      <div class="slider__contents"><i class="slider__image fas fa-male"></i>
+        <h2 class="slider__caption">Ельнур</h2>
+        <p class="slider__txt">Отличный базар! Очень большой ассортимент выбора. Теперь не обязательно выходить из дома чтобы купить что-то! Советую всем тут покупать.</p>
+      </div>
+      <div class="slider__contents"><i class="slider__image fas fa-male"></i>
+        <h2 class="slider__caption">Александр</h2>
+        <p class="slider__txt">Супер доставка! Заказал , оплатил, через часик уже у меня! Восхитительно! Проблем с доставкой не возникло.</p>
+      </div>
+      <div class="slider__contents"><i class="slider__image fas fa-male"></i>
+        <h2 class="slider__caption">Булат</h2>
+        <p class="slider__txt">Дешевые цены! Очень радуют скидки! выходит дешевле чем на базаре рядом с моим домом! Радует оплата онлайн.</p>
+      </div>
+      <div class="slider__contents"><i class="slider__image fas fa-female"></i>
+        <h2 class="slider__caption">Куаныш</h2>
+        <p class="slider__txt">Прекраснейшая атмосфера реальности! Это просто восхитительно, ваш базар, это чудо. Благодаря вам мой холодильник всегда полон!</p>
+      </div>
+    </div>
+  </div>
+
+  
+<!-- <section class="feedback animated mov2">
+  <div class="feedback__inner">
+    <div class="feedback__inner-info">
+      <p class="feedback__name">Ельнур</p>
+      <div class="feedback__photo">
+        <img src="../images/small/men.png" alt="">
+      </div>
+      <p class="feedback__title">
+        <strong>Отличный базар!</strong> Очень большой ассортимент выбора. Теперь не обязательно выходить из дома чтобы купить что-то! Советую всем тут покупать.
+      </p>
+    </div>
+    <div class="feedback__inner-info">
+      <p class="feedback__name">Александр</p>
+      <div class="feedback__photo">
+        <img src="../images/small/men.png" alt="">
+      </div>
+      <p class="feedback__title">
+        <strong>Супер доставка!</strong> Заказал , оплатил, через часик уже у меня! Восхитительно! Проблем с доставкой не возникло.
+      </p>
+    </div>
+    <div class="feedback__inner-info">
+      <p class="feedback__name">Булат</p>
+      <div class="feedback__photo">
+        <img src="../images/small/men.png" alt="">
+      </div>
+      <p class="feedback__title">
+        <strong>Дешевые цены!</strong> Очень радуют скидки! выходит дешевле чем на базаре рядом с моим домом! Радует оплата онлайн.
+      </p>
+    </div>
+  </div>
+</section> -->
+<section class="score animated">
+    <div class="score__wrapper">
+      <div class="counter col__fourth">
+        <i class="fas fa-user fa-2x"></i>
+        <h2 class="count">16846</h2>
+        <span class="count__text">Довольных клиентов</span>
+      </div>
+      <div class="counter col__fourth">
+        <i class="fas fa-store fa-2x"></i>
+        <h2 class="count">17239</h2>
+        <span class="count__text">Продано</span>
+      </div>
+      <div class="counter col__fourth">
+        <i class="fas fa-truck fa-2x"></i>
+        <h2 class="count">7869</h2>
+        <span class="count__text">Доставлено</span>
+      </div>
+    </div>
+  </section>
+  <!--<div class="item_box">-->
+  <!--<h3 class="item_title">Апельсины</h3>-->
+  <!--<p>Цена: <span class="item_price">650</span>тг/кг</p>-->
+  <!--<button class="add_item" data-id="1">Добавить в пакет</button>-->
+<!--</div>-->
+<!--<div class="item_box">-->
+  <!--<h3 class="item_title">Яблоки</h3>-->
+  <!--<p>Цена: <span class="item_price">375</span>тг/кг</p>-->
+  <!--<button class="add_item" data-id="2">Добавить в пакет</button>-->
+<!--</div>-->
+  <!--<div class="item_box">-->
+  <!--<h3 class="item_title">Баклажаны</h3>-->
+  <!--<p>Цена: <span class="item_price">1200</span>тг/кг</p>-->
+  <!--<button class="add_item" data-id="3">Добавить в пакет</button>-->
+<!--</div>-->
+<!--<button id="checkout">Просмотреть пакет</button>-->
+<!--<button id="clear_cart">Очистить пакет</button>-->
+<!--<div id="cart_content"></div>-->
+
+<!--  <select id="selectItem">
+  <option id="almaty">Алматы</option>
+  <option id="atyrau">Атырау</option>
+</select>
+<div class="containerss">
+
+<div class="almaty"><span class="small">Тел.:</span> НОМЕР ТЕЛЕФОНА<br><span class="small">Email:</span> <a href="mailto:mail@mail.ru">mail@mail.ru</a></div>
+<div class="atyrau"><span class="small">Тел.:</span> НОМЕР ТЕЛЕФОНА<br><span class="icq">426-968-289</span><br><span class="small">Email:</span> <a href="mailto:mail@mail.ru">mail@mail.ru</a></div>
+
+</div> -->
+

@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html ng-app="bazarza">
+<head>
+	<title>Bazarga</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+  <base href="/">
+  <link rel="icon" href="./images/small/icon.png" sizes="16x16">
+  <link href="./style/vendor/css/all.css" rel="stylesheet">
+  <script defer src="https://lk.easynetshop.ru/frontend/v5/ens-63ca08af.js"></script>
+  <link href="https://lk.easynetshop.ru/frontend/v5/ens-63ca08af.css" rel="stylesheet">
+  <script src="//lk.easynetshop.ru/frontend/v5/search/default.js"></script>
+  <link href="https://lk.easynetshop.ru/frontend/v5/search/default.css" rel="stylesheet">
+  <link rel="stylesheet" href="./style/all.css" type="text/css"/>
+  <style>.powered {display:none}</style>
+  <style>
+ </style>
+  <script type="text/javascript">
+document.addEventListener("EasyNetShopModalOpened", function(event) {
+  if (($(".easynetshop-modal-addtocart").css('display') != 'none'))
+    {
+       hideEasynetshopModals();
+    }
+}, false);
+</script>
+<!-- Yandex.Metrika counter -->
+<script type="text/javascript" >
+   (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+   m[i].l=1*new Date();k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
+   (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+
+   ym(53697850, "init", {
+        clickmap:true,
+        trackLinks:true,
+        accurateTrackBounce:true,
+        webvisor:true
+   });
+</script>
+<noscript><div><img src="https://mc.yandex.ru/watch/53697850" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+<!-- /Yandex.Metrika counter -->
+  <script src ="/js/vendor/ng.min.js"></script>
+  <script src ="/js/vendor/ng-route.min.js"></script>
+  <script src ="/js/vendor/ng-cookies.min.js"></script>
+  <script src ="/js/vendor/jquery-3.3.1.min.js"></script>
+  <script src ="/js/vendor/sweetalert.js"></script>
+  <script src ="/js/vendor/anime.min.js"></script>
+  <script src="/js/vendor/flickity.js"></script>
+  <script src ="/js/vendor/sweetalert2.js"></script>
+
+  <script src ="/app.js"></script>
+  <script src ="/js/vendor/file.js"></script>
+
+  <script src ="/js/filtres/date.js"></script>
+
+  <script src ="/js/controllers/local.js"></script>
+
+  <script src ="/js/controllers/home.js"></script>
+  <script src="/js/controllers/header.js"></script>
+  <script src ="/js/controllers/basket.js"></script>
+  <script src ="/js/controllers/login.js"></script>
+  <script src ="/js/controllers/registration.js"></script>
+  <script src ="/js/controllers/pavilion.js"></script>
+  <script src ="/js/controllers/crabsalad.js"></script>
+  <script src ="/js/controllers/ragu.js"></script>
+  <script src ="/js/controllers/tcezari.js"></script>
+  <script src ="/js/controllers/minute.js"></script>
+  <script src ="/js/controllers/fish.js"></script>
+  <script src ="/js/controllers/user.js"></script>
+  <script src ="/js/controllers/women.js"></script>
+  <script src ="/js/controllers/header.js"></script>
+  <script src ="/js/controllers/admin.js"></script>
+  <script src ="/js/controllers/adminProducts.js"></script>
+  <script src ="/js/controllers/adminUsers.js"></script>
+  <script src ="/js/controllers/addCategory.js"></script>
+  <script src ="/js/controllers/product.js"></script>
+  <script src ="/js/filtres/date.js"></script>
+  <script src ="/js/controllers/tender.js"></script>
+  <script src ="/js/controllers/slider.js"></script>
+  <script src ="/js/controllers/request.js"></script>
+  
+  
+
+
+  <script src ="/js/controllers/pavilions/milk.js"></script>
+  <script src ="/js/controllers/pavilions/fruit.js"></script>
+  <script src ="/js/controllers/pavilions/vegetable.js"></script>
+  <script src ="/js/controllers/pavilions/meat.js"></script>
+  <script src ="/js/controllers/pavilions/green.js"></script>
+  <script src ="/js/controllers/pavilions/fish.js"></script>
+  <script src ="/js/controllers/pavilions/berry.js"></script>
+  <script src ="/js/controllers/pavilions/dried.js"></script>
+
+  <script src="/js/controllers/cartimage.js"></script>
+</head>
+<body>
+  <div class="preloader" id = "page-preloader">
+    <div class="loader__red">
+      <div class="loader__green">
+        <div class="loader__blue">
+        </div>
+      </div>
+    </div>
+  </div>
+  <section class="mobile" id="mobile">
+    <div class="menu__nav">
+      <div class="menu__nav-background" id="mobile__backgorund">
+
+      </div>
+      <div class="menu__nav-inner" id="menu__nav_inner">
+        <i class="fas fa-times menu__bars animated bounceInRight" id="close"></i>
+        <p class="nav__inner-item animated bounceInLeft" ui-sref="home" id="nav__item">Главная</p>
+        <p class="nav__inner-item animated bounceInLeft" ui-sref = "pavilion" id="nav__item">Павильоны</p>
+<!--         <p class="nav__inner-item animated bounceInLeft" id="nav__item">Услуги</p>
+        <p class="nav__inner-item animated bounceInLeft" id="nav__item">Доставка</p>
+        <div class="mobile__buttons">
+          <button class="nav__inner-btn animated bounceInRight" ui-sref="login" id="nav__item" ui-sref = "login">Вход</button>
+          <button class="nav__inner-btn animated bounceInRight" id="nav__item">Регистрация</button>
+        </div> -->
+      </div>
+    </div>
+  </section>
+  <section class="header" id="header" ng-controller = " HeaderCtrl as vm">
+    <div class="header-inner">
+      <div class="menu" id="menu__bars">
+        <i class="fas fa-bars menu__bars animated bounceInRight" id="menu__bars"></i>
+      </div>
+      <div class="inner-logo animated bounceInLeft" ui-sref = "home">
+        <img src="./images/small/logo.png" alt="" class="img-logo">
+        <span class="logo-txt">Bazarga</span>
+      </div>
+      <div class="nav-menu">
+        <div class="nav-ul">
+          <li class="nav-li animated bounceInRight"><a href="/"><i  aria-hidden="true"></i>Главная</a></li>
+          <li class="nav-li animated bounceInRight"><a href="/pavilions"><i  aria-hidden="true"></i>Павильоны</a></li>
+          <li class="nav-li animated bounceInRight" ng-click = "vm.logout()"><a href="#"><i  aria-hidden="true"></i>Услуги</a></li>
+          <li class="nav-li animated bounceInRight"><a href="#"><i  aria-hidden="true"></i>Доставка</a></li>
+          <li class="nav-li animated bounceInRight" ng-if = "isAdmin"><a href="#"><i
+                  aria-hidden="true"></i>Админ
+          </a></li>
+          <li class="nav-li animated bounceInRight" ng-if = "!session"><a href="/login" ><i class="fa fa-newspaper-o" aria-hidden="true"></i>Вход</a></li>
+          <li class="nav-li animated bounceInRight accordion__name"
+          ng-if = "session"
+          id="accordion">
+          <a href="#" id="accordion__n" ng-bind = "session.name"></a>
+          <i class="fas fa-angle-down accodrion__angle"></i>
+        </li>
+        </div>
+      </div>
+    </div>
+  </section>
+<!--   <div class="accordion">
+     <li class="nav-li accordion__item" ui-sref = "basket">
+        <i class="fab fa-get-pocket"></i>
+        <span>Пакет</span>
+      </li>
+      <li class="nav-li accordion__item exit__check" id="exit" ng-click = "vm.logout()">
+        <i class="fas fa-sign-out-alt"></i>
+        <span>Выход</span>
+      </li>
+  </div> -->
+
+  
+
+  <!-- Load pages without reload UI-Router -->
+  <ui-view>
+
+  </ui-view>
+
+  <section class="footer">
+    <div class="footer-inner animated">
+        <div class="footer-contact animated mov2">
+          <div class="footer-contact-info">
+            <div class="contact-text">
+              <span class="contact-title">Телефонный номер</span>
+             <span class="contact-subtitle">+77072711999</span>
+            </div>
+          </div>
+          <div class="footer-contact-info ">
+            <div class="contact-text">
+              <span class="contact-title">Почта</span>
+              <span class="contact-subtitle">infobazarga@gmail.com</span>
+            </div>
+          </div>
+        </div>
+        <div class="footer-info">
+          <span class="footer-title">Навигация</span>
+          <span class="footer-subtitle" ui-sref = 'home'>Главная</span>
+          <span class="footer-subtitle">Поддержка</span>
+          <span class="footer-subtitle">Доствка</span>
+          <span class="footer-subtitle">О нас</span>
+        </div>
+        <div class="footer-info">
+          <span class="footer-title">Павильоны</span>
+          <span class="footer-subtitle">Мясной</span>
+          <span class="footer-subtitle">Овощной</span>
+          <span class="footer-subtitle">Фруктовый</span>
+          <span class="footer-subtitle">Молочный</span>
+          <span class="footer-subtitle">Зеленый</span>
+          <span class="footer-subtitle">Рыбный</span>
+        </div>
+        <div class="footer-info">
+          <span class="footer-title">Хит</span>
+          <span class="footer-subtitle">Телятина</span>
+          <span class="footer-subtitle">Белая рыба</span>
+          <span class="footer-subtitle">Картофель</span>
+          <span class="footer-subtitle">Мандарины</span>
+        </div>
+        <div class="footer-info">
+          <span class="footer-title">Поддержка</span>
+          <span class="footer-subtitle">Покупка</span>
+          <span class="footer-subtitle">Доставка</span>
+          <span class="footer-subtitle">Права</span>
+        </div>
+      </div>
+  </section>
+  <section class="footer-social">
+    <div class="footer-social-inner animated mov3">
+      <div class="footer-copy">
+        <span class="footer-rules">&copy; 2019 Bazarza | Все права защищены | Политика конфиденциальности </span>
+        <span class="footer-afstudio"><a href="http://bitly.com/2XcCXYx" target="_blank" title="Разработка эффективных сайтов в Казахстане" class="footer-afstudio-link">Создание сайта </a>- Студия веб-разработки "Afstudio"</span>
+      </div>
+      <div class="footer-soc">
+        <i class="fab fa-vk"></i>
+        <i class="fab fa-twitter"></i>
+        <i class="fab fa-facebook-f"></i>
+        <i class="fab fa-youtube"></i>
+      </div>
+    </div>
+  </section>
+</body>
+<script>
+        (function(w,d,u){
+                var s=d.createElement('script');s.async=true;s.src=u+'?'+(Date.now()/60000|0);
+                var h=d.getElementsByTagName('script')[0];h.parentNode.insertBefore(s,h);
+        })(window,document,'https://cdn.bitrix24.kz/b10235419/crm/site_button/loader_4_trb7ch.js');
+</script>
+<script>
+  (function(w,d,u){
+    var s=d.createElement('script');s.async=true;s.src=u+'?'+(Date.now()/60000|0);
+    var h=d.getElementsByTagName('script')[0];h.parentNode.insertBefore(s,h);
+  })(window,document,'https://cdn.bitrix24.kz/b10235419/crm/tag/call.tracker.js');
+</script>
+
+
+</html>

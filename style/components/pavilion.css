@@ -1,0 +1,162 @@
+.pavilion {
+	margin-top: 100px;
+    width: 100%;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-flow: row wrap;
+    flex-flow: row wrap;
+    -ms-flex-pack: distribute;
+    justify-content: space-around;
+}
+
+.pavilion-page {
+	padding-top: 100px;
+    width: 100%;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-flow: row wrap;
+    flex-flow: row wrap;
+    -ms-flex-pack: distribute;
+    justify-content: space-around;
+}
+
+	.pavilion__inner-item {
+		width: 32%;
+	    border-top: 1px solid #f1f1f1;
+	    position: relative;
+	    z-index: 1;
+	    background-color: #fff;
+	    border-radius: 3px;
+	    box-shadow: 0 2px 1px -1px rgba(0,0,0,.2), 0 1px 1px 0 rgba(0,0,0,.14), 0 1px 3px 0 rgba(0,0,0,.12);
+	    padding: 20px;
+	    margin-top: 20px;
+	}
+
+		.item__info p strong {
+			font-weight: 600;
+			font-size: 22px;
+		}
+
+		.item__info p {
+			font-size: 20px;
+			margin-top: 15px;
+			line-height: 1.5;
+		}
+
+		.item__info-btn {
+			border: 1px solid #1f7a06;
+			font-size: 18px;
+			border-radius: 5px;
+			transition: .25s;
+			cursor: pointer;
+			padding: 10px 15px;
+			background-color: #fff;
+			position: relative;
+			left: 50%;
+			transform: translateX(-50%);
+			color: #1f7a06;
+			margin-top: 140px;
+		}
+
+		.item__info-pavilion {
+			margin-top: 30px;
+			border: 1px solid #1f7a06;
+			font-size: 18px;
+			border-radius: 5px;
+			transition: .25s;
+			cursor: pointer;
+			padding: 10px 15px;
+			background-color: #fff;
+			color: #1f7a06;
+		}
+
+			.item__info-pavilion:hover a {
+				color: #fff;
+			}
+
+		.item__info-pavilion a {
+			text-decoration: none;
+			color: #1f7a06;
+			border: none;
+		}
+
+			.item__info-btn:hover , .item__info-pavilion:hover {
+				background-color: #e08104;
+				border: 1px solid #e08104;
+				color: #fff;
+			}
+
+			.item__info-pavilion a:hover {
+				color: #fff;
+			}
+
+			.item__info {
+				background-color: #fff;
+				padding: 10px;
+				border-radius: 8px;
+				opacity: .8;
+				height: 98%;
+			}
+
+		.pavilions__button {
+			display: flex;
+			justify-content: center;
+		}
+
+		.pavilion__inner-item:nth-child(1) {
+			background-image: linear-gradient(rgba(0,0,0,.1),rgba(0,0,0,.1)),url(../../images/big/meat.jpg);
+		    background-size: cover;
+		}
+
+		.pavilion__inner-item:nth-child(2) {
+			background-image: linear-gradient(rgba(0,0,0,.1),rgba(0,0,0,.1)),url(../../images/medium/exotic-fruit.jpg);
+		    background-size: cover;
+		    background-position: center;
+		    
+		}
+
+		.pavilion__inner-item:nth-child(3) {
+			background-image: linear-gradient(rgba(0,0,0,.1),rgba(0,0,0,.1)),url(../../images/big/fish.jpg);
+		    background-size: cover;
+		}
+
+		.pavilion__inner-item:nth-child(4) {
+			background-image: linear-gradient(rgba(0,0,0,.1),rgba(0,0,0,.1)),url(../../images/big/vegetables.jpg);
+		    background-size: cover;
+		}
+
+		.pavilion__inner-item:nth-child(5) {
+			background-image: linear-gradient(rgba(0,0,0,.1),rgba(0,0,0,.1)),url(../../images/big/fruits.jpg);
+		    background-size: cover;
+		}
+
+		.pavilion__inner-item:nth-child(6) {
+			background-image: linear-gradient(rgba(0,0,0,.1),rgba(0,0,0,.1)),url(../../images/big/milk.jpg);
+		    background-size: cover;
+		}
+
+		.pavilion__inner-item:nth-child(7) {
+			background-image: linear-gradient(rgba(0,0,0,.1),rgba(0,0,0,.1)),url(../../images/big/Green.jpg);
+		    background-size: cover;
+		}
+
+		.pavilion__inner-item:nth-child(8) {
+			background-image: linear-gradient(rgba(0,0,0,.1),rgba(0,0,0,.1)),url(../../images/big/berry.jpg);
+		    background-size: cover;
+		}
+
+		.pavilion__inner-item:nth-child(9) {
+			background-image: linear-gradient(rgba(0,0,0,.1),rgba(0,0,0,.1)),url(../../images/medium/suhofrukti_3.jpg);
+		    background-size: cover;
+		}
+
+.warning {
+	font-size: 18px;
+	text-align: center;
+	margin: 20px 0;
+}
+
+.warning strong {
+	color: red;
+	font-weight: 600;
+}

@@ -1,0 +1,28 @@
+.users__page {
+  width: 100%;
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+  justify-content: center;
+  padding-top: 100px;
+}
+
+  .users__page-inner {
+    width: 90%;
+    display: -webkit-flex;
+    display: -ms-flex;
+    display: flex;
+    justify-content: space-between;
+  }
+
+    .users__column-title {
+      font-size: 18px;
+      font-family: 'PT Sans';
+      font-weight: 600;
+    }
+
+    .users__column-subtitle {
+      font-size: 16px;
+      font-family: 'PT Sans';
+      margin-top: 10px;
+    }

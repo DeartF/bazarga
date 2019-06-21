@@ -1,0 +1,9 @@
+.container__title {
+	text-align: center;
+	font-size: 42px;
+	transition: .3s;
+}
+
+.container__title:hover {
+	transform: scale3d(1.1 , 1.1 , 1.1);
+}

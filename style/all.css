@@ -1,0 +1,42 @@
+/*library*/
+@import url('./vendor/reset.css');
+@import url('./vendor/animate.css');
+@import url('./vendor/hover-min.css');
+@import url('./components/fonts.css');
+@import url('./vendor/flickity.css');
+
+
+@import url('./components/preloader.css');
+/*pages*/
+@import url('./pages/home.css');
+@import url('./pages/login.css');
+@import url('./pages/recepts.css');
+@import url('./pages/registration.css');
+@import url('./pages/add.css');
+@import url('./pages/product.css');
+@import url('./pages/basket.css');
+@import url('./pages/pavilions/fruit.css');
+@import url('./pages/adminUsers.css');
+@import url('./pages/tender.css');
+
+
+/*components*/
+@import url('./components/header.css');
+@import url('./components/pavilion.css');
+@import url('./components/footer.css');
+@import url('./components/modal__admin.css');
+@import url('./components/chooseMe.css');
+@import url('./components/choosePavilion.css');
+@import url('./components/info.css');
+@import url('./components/secondBanner.css');
+@import url('./components/other.css');
+@import url('./components/bid.css');
+@import url('./components/SliderPavilions.css');
+@import url('./components/slider.css');
+@import url('./components/card.css');
+@import url('./components/cart.css');
+
+
+@import url('./pages/media.css');
+@import url('./components/media.css');
+

@@ -1,0 +1,16 @@
+<div class="wrapper__reg">
+  <form class="form__reg" ng-submit = "vm.registration()">
+    <p class="form__title"><i class="fas fa-sign-in-alt"></i>Регистрация на базаре</p>
+    <input class="input__reg first" name = "useremail" type="email" ng-model = "vm.email" placeholder="Введите E-mail адрес" id = "reg__email">
+    <input class="input__reg" name = "username" type="text" ng-model = "vm.name" placeholder="Введите свое имя" id = "reg__name">
+    <input class="input__reg" name = "userpassword" type="password" ng-model = "vm.password"
+      placeholder="Введите пароль" id = "reg__password"><span class="">
+      <i class="far fa-eye-slash hide__password" id="hide"></i></i></span>
+    <button type="submit" class="btn__reg">Зарегистрироваться</button>
+
+    <div class="recover">
+      <input type="checkbox" id="ckbox">
+      <label for="ckbox">Ознакомлен(-а) и принимаю <a href="#">условия регистрации</a></label>
+    </div>
+  </form>
+</div>

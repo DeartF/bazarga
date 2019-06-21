@@ -1,0 +1,67 @@
+<section class="product__page">
+  <div class="product__inner">
+    <div class="product__photo">
+      <img alt="" class="product__photo-model" ng-src = "{{vm.product.link}}">
+    </div>
+    <div class="product__information">
+      <span class="product__title">Стоимость</span>
+      <span class="product__subtitle" ng-bind = "vm.product.price"></span>
+      <span class="product__title">Павильон</span>
+      <span class="product__subtitle" ng-bind = "vm.product.model"></span>
+      <span class="product__title">Название</span>
+      <span class="product__subtitle" ng-bind = "vm.product.gender"></span>
+      <div class="cart" ng-click  = " vm.addToCart(vm.product)">
+        <i class="fas fa-shopping-cart"></i>
+        <span class="cart__add">Добавить в пакет</span>
+      </div>
+
+    </div>
+  </div>
+</section>
+<div class="all__comment">
+  <div class="all__comment-inner">
+    <form ng-submit="vm.addComment()" class="comment__add">
+      <textarea ng-model="vm.text" class="comment__add-input">
+      </textarea>
+      <button type="submit" class="comment__add-btn">Добавить комментарий</button>
+    </form>
+    <div class="comment__product">
+        <div class="comment__inner">
+          <div class="comment__item" ng-repeat = "comment in vm.product.comments">
+            <span class="comment__author" ng-bind = "vm.user.name"></span>
+            <span class="comment__text" ng-bind = " comment.text "></span>
+            <div class="comment__inner-action">
+              <div class="comment__action-editor">
+                <img src="../img/small/minus.svg" alt="" class="comment__img" ng-click = " vm.deleteComment ( $index , comment )">
+              </div>
+              <span class="comment__date" ng-bind = " comment.date | date "></span>
+            </div>
+          </div>
+        </div>
+    </div>
+  </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- <div class="model-product-inner mov3 animated">
+        <div class="model-info">
+          <div class="model-price-changed">
+            <span class="model-price-undiscount" ng-bind = "vm.product.price"></span>
+          </div>
+          <img  alt="" class="model-photo model-photo-big" ng-src = "{{vm.product.link}}">
+          <div class="model-mod">
+            <span class="model-gender" ng-bind = "vm.product.gender"></span>
+            <span class="model" ng-bind = "vm.product.model"></span>
+          </div>
+        </div>
+</div> -->

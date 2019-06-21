@@ -1,0 +1,131 @@
+.carousel-cell {
+  width: 50%;
+  height: 500px;
+  margin-right: 10px;
+  border-radius: 5px;
+  counter-increment: carousel-cell;
+  margin-right: 10px;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+  justify-content: center;
+  -ms-align-items: center;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.ads-carousel {
+	width: 80%;
+	position: relative;
+	left: 50%;
+	transform: translateX(-50%);
+}
+
+.ads__text {
+	font-size: 15px;
+	line-height: 1.5;
+}
+
+.carousel-cell-2 {
+	width: 80%;
+}
+	.pavilion__cell:nth-child(1) {
+	background-image: linear-gradient(rgba(0,0,0,.2),rgba(0,0,0,.2)),url(../../images/big/vegetables.jpg);
+    background-size: cover;
+	/*background-position: center center;*/
+	}
+
+	.pavilion__cell:nth-child(2) {
+	background-image: linear-gradient(rgba(0,0,0,.2),rgba(0,0,0,.2)),url(../../images/big/fruitsSlider.jpg);
+    background-size: cover;
+	/*background-position: center center;*/
+	}
+
+	.pavilion__cell:nth-child(3) {
+	background-image: linear-gradient(rgba(0,0,0,.2),rgba(0,0,0,.2)),url(../../images/big/meat.jpg);
+    background-size: cover;
+	/*background-position: center center;*/
+	}
+
+	.pavilion__cell:nth-child(4) {
+	background-image: linear-gradient(rgba(0,0,0,.2),rgba(0,0,0,.2)),url(../../images/big/Green.jpg);
+    background-size: cover;
+	/*background-position: center center;*/
+	}
+
+	.pavilion__cell:nth-child(5) {
+	background-image: linear-gradient(rgba(0,0,0,.2),rgba(0,0,0,.2)),url(../../images/big/berry.jpg);
+    background-size: cover;
+	/*background-position: center center;*/
+	}
+
+	.pavilion__cell:nth-child(6) {
+	background-image: linear-gradient(rgba(0,0,0,.2),rgba(0,0,0,.2)),url(../../images/big/fish.jpg);
+    background-size: cover;
+	/*background-position: center center;*/
+	}
+
+	.pavilion__cell:nth-child(7) {
+	background-image: linear-gradient(rgba(0,0,0,.2),rgba(0,0,0,.2)),url(../../images/big/milk.jpg);
+    background-size: cover;
+	/*background-position: center center;*/
+	}
+
+	.pavilion__cell:nth-child(8) {
+	background-image: linear-gradient(rgba(0,0,0,.2),rgba(0,0,0,.2)),url(../../images/medium/suhofrukti_3.jpg);
+    background-size: cover;
+	/*background-position: center center;*/
+	}
+
+	.carousel__cell-block {
+		width: 50%;
+		height: 50%;
+		background-color: #fff;
+		opacity: .8;
+		padding: 20px;
+		border-radius: 10px;
+	}
+
+		.carousel__cell-title {
+			text-align: center;
+			font-size: 24px;
+			font-family: 'pt sans';
+		}
+
+		.carousel__cell-btn {
+			position: relative;
+			left: 50%;
+			top: 70%;
+			transform: translate(-50% , 280%);
+			padding: 8px 12px;
+			outline: none;
+			font-family: 'raleway';
+			font-size: 24px;
+			background-color: #000;
+			color: #fff;
+			cursor: pointer;
+			opacity: 1;
+			transition: .3s;
+			font-weight: 600;
+			border: 1px solid #000;
+			border-radius: 5px;
+		}
+
+			.carousel__cell-btn:hover {
+				color: #000;
+				background-color: #fff;
+
+			}
+
+.main__carousel-title {
+	text-align: center;
+    font-size: 36px;
+    background: linear-gradient(150deg, #000 33%, #31c309 66%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: 600;
+    margin: 30px 0;
+    
+}

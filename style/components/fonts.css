@@ -1,0 +1,18 @@
+@font-face {
+	font-family: 'PT Sans';
+	src: url('../fonts/PT_Sans/PT_Sans-Web-Regular.ttf');
+}
+
+@font-face {
+	font-family: 'Raleway';
+	src: url('../fonts/Raleway/Raleway-Regular.ttf');
+}
+
+@font-face {
+	font-family: 'TruenoLt';
+	src: url('../fonts/TruenoLt.otf');
+}
+
+body {
+	font-family: 'PT Sans';
+}

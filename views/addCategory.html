@@ -1,0 +1,49 @@
+<div class="table__product">
+  <div class="table__inner-product">
+    <div class="thead">
+      <div class="tr">
+        <div class="td">Цена</div>
+        <div class="td">Название</div>
+        <div class="td">Павильон</div>
+      </div>
+    </div>
+    <div class="tbody">
+      <div class="tr" ng-repeat = " product in vm.products">
+        <div class="td" ng-bind = " product.price "></div>
+        <div class="td" ng-bind = " product.model"></div>
+        <div class="td">
+          <i class="fas fa-pen-square product__action" ng-click = "vm.editTable(product)"></i>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<section class="modal__admin" ng-if = "vm.objectToEdit != null">
+  <div class="modal__backdrop-admin" ng-click = "vm.closeModal()"></div>
+  <div class="modal__window">
+    <div class="modal__title">Павильон</div>
+    <div class="modal__field">
+      <input type="text" class="input__modal" ng-model = "vm.objectToEdit.price">
+    </div>
+    <div class="modal__field">
+      <input type="text" class="input__modal" ng-model = "vm.objectToEdit.model">
+    </div>
+    <div class="modal__field">
+      <div class="select__city choose__pavilion animated zoomInRight">
+  			<select id="selectItem">
+  				<option id="CategoryMeat" value="meat">Мясной</option>
+  				<option id="CategoryFish" value="fish">Рыбный</option>
+  				<option id="CategoryFish" value="fish">Овощной</option>
+  				<option id="CategoryFish" value="fish">Фруктовый</option>
+  				<option id="CategoryFish" value="fish">Молочный</option>
+  				<option id="CategoryFish" value="fish">Зелёный</option>
+  			</select>
+  		</div>
+    </div>
+    <div class="modal__field">
+      <button class="button__modal" ng-click = "vm.editFotowear()">Сохранить</button>
+    </div>
+  </div>
+</section>

@@ -1,0 +1,61 @@
+.card {
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-10%);
+    width: 60%;
+    height: 400px;
+    background: #262626;
+    overflow: hidden;
+    border-radius: 10px;
+}
+.card .imgBx,
+.card .details {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    box-sizing: border-box;
+    transition: .5s;
+}
+.card .imgBx {
+    top: 0;
+    left: 0;
+    background-image: linear-gradient(rgba(0,0,0,.1),rgba(0,0,0,.1)),url(../../images/medium/exotic.jpg);
+    background-size: cover;
+    background-position: center center;
+}
+.card:hover .imgBx {
+    top: -100%;
+    left: -100%;
+    border-radius: 10px;
+}
+.card .imgBx img {
+    width: 100%;
+}
+.card .details {
+    background: #262626;
+    top: 100%;
+    right: 100%;
+    padding: 60px 30px;
+    line-height: 1.8;
+    border-radius: 10px;
+}
+.card:hover .details {
+    top: 0%;
+    right: 0%;
+    border-radius: 12px;
+}
+.card .details h2 {
+    color: #fff;
+    text-align: center;
+    margin: 0;
+    padding: 0 0 10px;
+    border-bottom: 2px solid #fff;
+    font-size: 20px;
+    font-weight: 600;
+
+}
+.card .details p {
+    margin: 20px 0 0;
+    color: #fff;
+}

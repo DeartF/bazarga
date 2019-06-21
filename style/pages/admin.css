@@ -1,0 +1,72 @@
+.admin {
+  width: 100%;
+  position: relative;
+  top: 130px;
+  height: 80vh;
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+  -ms-align-items: center;
+  align-items: center;
+  justify-content: center;
+}
+
+  .admin-inner {
+    width: 90%;
+    display: -webkit-flex;
+    display: -ms-flex;
+    display: flex;
+    justify-content: space-around;
+  }
+
+    .admin-inner > input {
+      border: 2px dashed #623232;
+      padding: 10px 15px;
+      outline: none;
+      border-radius: 3px;
+    }
+
+      .admin-inner > input:focus::placeholder {
+        opacity: 0;
+      }
+
+      input[type  = file] {
+        width: 300px;
+      }
+
+    .btn-submit {
+      color: #fff;
+      background-color: #623232;
+      font-size: 18px;
+      padding: 5px 10px;
+      cursor: pointer;
+      transition: .15s ease-out;
+      border: none;
+      text-transform: uppercase;
+      border-radius: 5px;
+      outline: none;
+    }
+
+      .btn-submit:hover {
+        opacity: .9;
+      }
+
+.product__action {
+  color: #ff7373;
+  margin-right: 5px;
+  font-size: 24px;
+  cursor: pointer;
+  transition: 1s ease-out;
+}
+
+.product__action {
+  opacity: .9;
+}
+
+.product__action:hover {
+  color: #623232;
+}
+
+
+
+

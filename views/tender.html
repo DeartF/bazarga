@@ -1,0 +1,100 @@
+<section class="tender">
+	<div class="tender__inner">
+		<div class="tender__text">
+				<p class="tender__text-title">Наш тендер</p>
+			</div>
+		<div class="tender__inner-first">
+			<form class="tender__send" method="post"  ng-submit = "vm.saveRequest()" id="frm">
+				<div class="tender__send-window">
+					<p class="window__title">Подача заявки</p>
+					<div class="window__description">
+						<span class="description__name">Описание</span>
+						<textarea id="" cols="30" rows="4" class="descrition" style="resize: none" ng-model = "vm.descriptionRequest" name = "descriptionRequest" required></textarea>
+					</div>
+					<div class="window__company">
+						<span class="company__name">Название вашей компании</span>
+						<input type="text" class="company__name-input" ng-model = "vm.companyRequest" name="companyRequest" required>
+					</div>
+					<button type="submit" class="tender__send-button">Отправить</button>
+				</div>
+			</form>
+			<form class="tender__send-question" ng-submit = "vm.saveQuestion()">
+				<div class="tender__question-window">
+					<p class="question__title">Задать нам вопрос</p>
+					<div class="question__send">
+						<span class="question__name">Содержание вопроса</span>
+						<textarea id="" cols="30" rows="4" class="descrition" style="resize: none" ng-model = "vm.question"></textarea>
+					</div>
+					<div class="window__company">
+						<span class="company__name">Название вашей компании</span>
+						<input type="text" class="company__name-input" ng-model = "vm.company">
+					</div>
+					<button type="submit" class="tender__send-button">Отправить</button>
+				</div>
+			</form>
+		</div>
+		<div class="tender__inner-second">
+			<div class="tender__second-inner">
+				<div class="tender__second-window">
+					<p class="second__window-title">Детальная информация по теднеру</p>
+					<div class="window__line">
+						<span class="window__line-title">Наиминование тендера:</span>
+						<span class="window__line-subtitle">Продукты питания</span>
+					</div>
+					<div class="window__line">
+						<span class="window__line-title">Тип торга:</span>
+						<span class="window__line-subtitle">Запрос ( на покупку )</span>
+					</div>
+					<div class="window__line">
+						<span class="window__line-title">Регион </span>
+						<span class="window__line-subtitle">Алматы</span>
+					</div>
+					<div class="window__line">
+						<span class="window__line-title">Время начала торга </span>
+						<span class="window__line-subtitle">15 февраля 18:47</span>
+					</div>
+					<div class="window__line">
+						<span class="window__line-title">Время окончания торга </span>
+						<span class="window__line-subtitle">19 февраля 19:00</span>
+					</div>
+					<div class="window__line">
+						<span class="window__line-title">Инициатор торга </span>
+						<span class="window__line-subtitle">Bazarga</span>
+					</div>
+					<div class="window__line">
+						<span class="window__line-title">Мннимальный шаг цены </span>
+						<span class="window__line-subtitle">625,00 тенге</span>
+					</div>
+					<div class="window__line">
+						<span class="window__line-title">Срок поставки </span>
+						<span class="window__line-subtitle">в соответствии с тендерной документацией</span>
+					</div>
+					<div class="window__line">
+						<span class="window__line-title">Порядок оплаты </span>
+						<span class="window__line-subtitle">в соответствии с тендерной документацией</span>
+					</div>
+					<div class="window__line">
+						<span class="window__line-title">Требования к поставщикам </span>
+						<span class="window__line-subtitle">
+							<p>1. Заявка потенциального поставщика на участие в тендере является выражением согласия потенциального поставщика поставить товар, оказать услуги и/или выполнить работы в соответствии с требованиями и условиями тендерной документации и должна содержать:</p>
+							<p>- заполненную и подписанную потенциальным поставщиком Анкету поставщика (приложение 2 к Тендерной документации);</p>
+							<p>- техническое задание потенциального поставщика, подписанное потенциальным поставщиком с описанием функциональных, технических, качественных и эксплуатационных характеристик работ, услуг в соответствии с требованиями технических характеристик (приложение 1 к Тендерной документации); </p>
+							<p>- ценовое предложение, подписанное потенциальным поставщиком;</p>
+							<p>- документы (лицензия, патент, свидетельство и другие), подтверждающие право потенциального поставщика на производство, поставку и реализацию закупаемых товаров, выполнение работ и оказание услуг, а также документы, представляемые потенциальным поставщиком в подтверждение его квалификационным требованиям;</p>
+							<p>2. Цены предоставляются без НДС;</p>
+							<p>3. Полная информация в приложенной Тендерной документации;</p>
+							<p>4. Запрещено подавать ценовое предложение, превышающие бюджет закупки.</p>
+						</span>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+<div class="tbody">
+      <div class="tr" ng-repeat = " request in vm.requests">
+        <div class="td" ng-bind = " request.descriptionRequest "></div>
+        <div class="td" ng-bind = " request.companyRequest"></div>
+        <div class="td" ng-bind = " request._id"></div>
+      </div>
+    </div>

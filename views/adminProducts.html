@@ -1,0 +1,53 @@
+<form class="admin" ng-submit = 'vm.saveProduct()'>
+  <div class="admin-inner">
+    <input type="text" placeholder="Введите цену" ng-model = 'vm.price' required>
+    <input type="text" placeholder="Введите павильон" ng-model = 'vm.gender' required>
+    <input type="text" placeholder="Введите название" ng-model = 'vm.model' required>
+    <input ng-file-model = "vm.file" accept="img/*" type="file" required>
+    <button type="submit" class="btn-submit">Добавить проудкт</button>
+  </div>
+</form>
+<div class="table__product">
+  <div class="table__inner-product">
+    <div class="thead">
+      <div class="tr">
+        <div class="td">Цена</div>
+        <div class="td">Павильон</div>
+        <div class="td">Название</div>
+        <div class="td">Действия</div>
+      </div>
+    </div>
+    <div class="tbody">
+      <div class="tr" ng-repeat = " product in vm.products">
+        <div class="td" ng-bind = " product.price "></div>
+        <div class="td" ng-bind = " product.gender"></div>
+        <div class="td" ng-bind = " product.model"></div>
+        <div class="td">
+          <i class="far fa-edit product__action" ng-click = "vm.editTable(product)"></i>
+          <i class="fas fa-trash product__action" ng-click = "vm.deleteProduct(product)"></i>
+          <button class="btn btn__page" ui-sref = "product({id: product._id})">Страница</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<section class="modal__admin" ng-if = "vm.objectToEdit != null">
+  <div class="modal__backdrop-admin" ng-click = "vm.closeModal()"></div>
+  <div class="modal__window">
+    <div class="modal__title">Изменить продукт</div>
+    <div class="modal__field">
+      <input type="text" class="input__modal" ng-model = "vm.objectToEdit.price">
+    </div>
+    <div class="modal__field">
+      <input type="text" class="input__modal" ng-model = "vm.objectToEdit.gender">
+    </div>
+    <div class="modal__field">
+      <input type="text" class="input__modal" ng-model = "vm.objectToEdit.model">
+    </div>
+    <div class="modal__field">
+      <button class="button__modal" ng-click = "vm.editFotowear()">Сохранить</button>
+    </div>
+  </div>
+</section>

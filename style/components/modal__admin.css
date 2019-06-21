@@ -1,0 +1,86 @@
+.modal__admin {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	/*buttom: 0;*/
+	z-index: 15;
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	justify-content: center;
+	-ms-align-items: center;
+	align-items: center;
+}
+
+	.modal__backdrop-admin {
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		bottom: 0;
+		background-color: rgba(0, 0, 0, .67);
+		z-index: 1;
+	}
+
+	.modal__window {
+		position: relative;
+		width: 400px;
+		background-color: rgb(255, 255, 255);
+		z-index: 2;
+		border: 2px solid #2baa08;
+		border-radius: 5px 5px 3px 3px	;
+	}
+
+		.modal__title {
+			text-align: center;
+			text-transform: uppercase;
+			background-color: #2baa08;
+			color: #fff;
+			font-family: 'Raleway';
+			font-size: 24px;
+			padding: 5px 0;
+		}
+
+		.modal__field {
+			display: -webkit-flex;
+			display: -moz-flex;
+			display: -ms-flex;
+			display: -o-flex;
+			display: flex;
+			justify-content: center;
+		}
+
+			.input__modal {
+				border: 1.5px solid #2baa08;
+				outline: none;
+				margin: 10px 0;
+				width: 70%;
+				border-radius: 5px;
+				padding-left: 10px;
+				color: #000;
+				padding: 5px 8px;
+			}
+
+			.button__modal {
+				width: 50%;
+				outline: none;
+				border: none;
+				padding: 5px 10px;
+				margin-bottom: 20px;
+				color: #fff;
+				font-size: 20px;
+				background-color: #2baa08;
+				font-family: 'Raleway';
+				border-radius: 5px;
+				cursor: pointer;
+				transition: .2s ease-out;
+			}
+
+				.button__modal:hover {
+					opacity: .9;
+					transform: scale3d(1.05 , 1.05, 1.05);
+				}

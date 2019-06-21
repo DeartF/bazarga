@@ -1,0 +1,248 @@
+.recept {
+  width: 100%;
+  padding-top: 100px;
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+  border-bottom: 1px solid #efefef;
+  padding-bottom: 20px;
+}
+
+.recept__home {
+  width: 100%;
+}
+
+  .recept__img {
+    width: 60%;
+    padding-left: 5%;
+  }
+
+  .recept__img img {
+    width: 80%;
+    transition: .3s;
+  }
+
+    .recept__img img:hover {
+      transform: scale3d(1.1 , 1.1 , 1.1);
+    }
+
+    .recept__info {
+      line-height: 1.5;
+      width: 40%;
+      font-family: 'Raleway';
+    }
+
+      .recept__name {
+        text-align: center;
+        font-size: 32px;
+        font-weight: 600;
+        font-family: inherit;
+        margin-bottom: 10px;
+        color: #31c309;
+        animation: gradient 10s infinite linear;
+      }
+
+      .recept__title {
+        text-align: left;
+        font-size: 28px;
+        font-weight: 600;
+        margin-bottom: 10px;
+      }
+
+      .recept__ingridient {
+        font-size: 24px;
+        margin-bottom: 10px;
+      }
+
+.cookingmethod {
+  width: 100%;
+  font-family: 'Raleway';
+  line-height: 1.5;
+}
+
+  .recept__subtitle {
+    font-size: 32px;
+    color: #31c309;
+    font-weight: 600;
+    padding-left: 5%;
+    margin-top: 20px;
+    animation: gradient 10s infinite linear;
+  }
+
+  .recept__step {
+    font-size: 24px;
+    padding-left: 5%;
+    margin-top: 10px;
+  }
+
+.order {
+  width: 100%;
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+  justify-content: center;
+}
+
+  .order__button {
+    margin-top: 30px;
+    border: 1px solid #1f7a06;
+    font-size: 22px;
+    border-radius: 5px;
+    transition: .25s;
+    cursor: pointer;
+    padding: 12px 18px;
+    background-color: #fff;
+    color: #1f7a06;
+    font-family: 'Raleway';
+  }
+
+    .order__button:hover {
+      background-color: #1f7a06;
+      color: #fff;
+    }
+
+  .make__order {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 24px;
+    font-family: 'Raleway';
+  }
+
+    @keyframes gradient {
+      0% {
+        color: #31c309;
+      }
+      50% {
+        color: #0ab6dd;
+      }
+      100% {
+        color: #31c309;
+      }
+    }
+
+
+
+
+
+    /* Other recepts */
+
+
+
+.other__recepts {
+  width: 100%;
+  margin-top: 30px;
+}
+
+  .recepts__inner {
+    display: -webkit-flex;
+    display: -ms-flex;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 5%;
+  }
+
+    .recetps__inner-info {
+      width: 350px;
+    }
+
+      .info__img {
+        width: 350px;
+        height: 300px;
+      }
+
+      .info__img img {
+        width: 350px;
+        height: 300px;
+        -webkit-box-shadow: 7px 6px 19px -2px rgba(31,122,6,0.24);
+        -moz-box-shadow: 7px 6px 19px -2px rgba(31,122,6,0.24);
+        box-shadow: 7px 6px 19px -2px rgba(31,122,6,0.24);
+      }
+
+      .info__title {
+        text-align: center;
+        font-size: 24px;
+        font-weight: 600;
+        color: #31c309;
+        margin-bottom: 10px;
+      }
+
+        .info__text {
+          line-height: 2;
+          font-family: 'Raleway';
+        }
+
+          .info__text-title {
+            text-align: center;
+            font-size: 20px;
+            margin-top: 10px;
+          }
+
+          .info__text-p {
+            font-size: 18px;
+          }
+
+          .info__button {
+            margin-top: 10px;
+            border: 1px solid #1f7a06;
+            font-size: 18px;
+            border-radius: 5px;
+            transition: .25s;
+            cursor: pointer;
+            padding: 8px 14px;
+            background-color: #fff;
+            color: #1f7a06;
+            margin-left: 10%;
+          }
+
+            .info__button:hover {
+              color: #fff;
+              background-color: #1f7a06;
+            }
+
+.ragu__img {
+  padding-top: 100px;
+}
+
+.accordion {
+  border-top: 1px solid #ddd;
+  border-left: 1px solid #ddd;
+  border-right: 1px solid #ddd;
+  margin: 0.5rem 0 1rem 0;
+  padding-left: 0;
+  width: 30%;
+}
+
+  .accordion-header {
+    background-color: #fff;
+    border-bottom: 1px solid #ddd;
+    cursor: pointer;
+    min-height: 3rem;
+    line-height: 3rem;
+    padding: 0 1rem;
+  }
+
+  .accordion-header:after {
+    content: '\02795';
+    font-size: 0.6rem;
+    color: #777;
+    float: right;
+  }
+
+  .accordion-header.active:after {
+    content: '\02796';
+  }
+
+  .accordion-body {
+    display: none;
+    padding: 1rem;
+    border-bottom: 1px solid #777;
+  } 
+
+  .salad__info--text {
+        background: #fff;
+    width: 90%;
+    height: 90%;
+    padding: 10px;
+    border-radius: 10px;
+    opacity: .8;
+  }
